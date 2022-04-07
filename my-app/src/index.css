@@ -1,0 +1,52 @@
+
+body {
+	font: 25px "Times New Roman", Futura, sans-serif;
+	margin: 100px;
+}
+
+ol, ul {
+	padding-left: 90px;
+}
+
+.board-row:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+.status {
+	margin-bottom: 10px;
+}
+
+.square {
+	background: rgb(193, 153, 239);
+	border: 2px solid rgb(63, 140, 221);
+	float: left;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 34px;
+	height: 34px;
+	margin-right: 5px;
+	margin-top: 5px;
+	padding: 0;
+	text-align: center;
+	width: 34px;
+}
+
+.square:focus {
+	outline: rgb(126, 233, 233);
+}
+
+.kbd-navigation .square:focus {
+	background: rgb(255, 255, 255);
+}
+
+.game {
+	display: flex;
+	flex-direction: row;
+}
+
+.game-info {
+	margin-left: 20px;
+}
+
